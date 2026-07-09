@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <title>ANNAPAREDDY SESHI REDDY | Security Analyst | Hands-on Experience</title>
+
+    <meta name="description"
+      content="Hands-on experience with Microsoft Sentinel, Microsoft Defender XDR, Microsoft Azure, Microsoft Intune, Threat Hunting, Vulnerability Management, Incident Response, Security Operations Center (SOC), and Cloud Security.">
+    <meta name="keywords"
+          content="Security Analyst, SOC Analyst, Cybersecurity Projects, Microsoft Sentinel, Microsoft Defender XDR, Azure Security, Microsoft Entra ID, Microsoft Intune, Threat Hunting, Vulnerability Management">
+
+    <meta name="author"
+          content="ANNAPAREDDY SESHI REDDY">
+
+    <meta name="theme-color"
+          content="#3b82f6">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+          content="ANNAPAREDDY SESHI REDDY | Cybersecurity Projects">
+
+    <meta property="og:description"
+          content="Security Analyst portfolio showcasing SOC operations, Microsoft Sentinel, Defender XDR, Azure Security, and enterprise cybersecurity projects.">
+
+    <meta property="og:image"
+          content="assets/profile/profile-main.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:title"
+          content="ANNAPAREDDY SESHI REDDY | Cybersecurity Projects">
+
+    <meta name="twitter:description"
+          content="Cybersecurity Portfolio | Microsoft Sentinel | Defender XDR | Azure Security">
+
+    <meta name="twitter:image"
+          content="assets/profile/profile-main.jpg">
+
+    <!-- Favicon -->
+<link rel="icon"
+      type="image/png"
+      href="assets/logo/my-logo.png">
+
+<link rel="apple-touch-icon"
+      href="assets/logo/my-logo.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="Main Navigation">
+
+    <div class="nav-container">
+
+        <!-- Logo -->
+        <div class="logo">
+
+            <a href="index.html" aria-label="Home" class="logo-link">
+
+                <div class="logo-circle-container">
+                    <img src="assets/logo/my-logo.png"
+                         alt="ANNAPAREDDY SESHI REDDY Logo"
+                         class="logo-img">
+                </div>
+
+                <span class="logo-text">SESHI</span>
+
+            </a>
+
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-links">
+
+            <a href="index.html#home">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="experience.html">Hands-on Experience</a>
+
+            <a href="contact.html" class="nav-contact-btn">
+                Contact
+            </a>
+
+        </div>
+          <!-- THE ATOMIC TOGGLE -->
+<button class="mobile-menu-btn atom-toggle"
+        onclick="toggleMenu()"
+        aria-label="Toggle Menu">
+
+    <div class="nucleus"></div>
+    <div class="ring ring-1"></div>
+    <div class="ring ring-2"></div>
+
+</button>
+
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu">
+
+    <a href="index.html#home" onclick="toggleMenu()">Home</a>
+    <a href="about.html" onclick="toggleMenu()">About</a>
+    <a href="experience.html" onclick="toggleMenu()">Hands-on Experience</a>
+    <a href="contact.html" onclick="toggleMenu()">Contact</a>
+
+    <div class="mobile-social">
+
+        <p>FIND WITH ME</p>
+
+        <div class="mobile-social-icons">
+
+            <a href="https://www.facebook.com/aseshi.annapareddy"target="_blank"rel="noopener noreferrer"aria-label="Facebook">
+                <i data-lucide="facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/annapareddyseshireddy/?hl=en"target="_blank"rel="noopener noreferrer"aria-label="Instagram">
+                <i data-lucide="instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/annapareddy-seshi-reddy-269b79266/"target="_blank"rel="noopener noreferrer"aria-label="LinkedIn">
+                <i data-lucide="linkedin"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@ANNAPAREDDYSESHIREDDY"target="_blank"rel="noopener noreferrer"aria-label="YouTube">
+                <i data-lucide="youtube"></i>
+            </a>
+
+            <a href="https://github.com/SESHI052"target="_blank"rel="noopener noreferrer"aria-label="GitHub">
+                <i data-lucide="github"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</nav>
+
+<!-- Hands-on Experience Hero -->
+<section class="works-hero">
+
+    <div class="works-hero-content">
+
+        <h1>
+            Hands-on <span class="gradient-text">Experience</span>
+        </h1>
+
+        <p>
+            Explore my practical experience in Security Operations Center (SOC),
+            Microsoft Sentinel, Microsoft Defender XDR, Microsoft Azure,
+            Microsoft Intune, Threat Hunting, Vulnerability Management,
+            Incident Response, and Enterprise Cloud Security.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Experience Categories -->
+<section class="works-filter-section">
+
+    <div class="filter-container">
+
+        <button class="filter-btn active"
+                onclick="filterWorks('all',this)">
+            All Experience
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterWorks('soc',this)">
+            SOC Operations
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterWorks('cloud',this)">
+            Cloud Security
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterWorks('vulnerability',this)">
+            Vulnerability Management
+        </button>
+
+        <button class="filter-btn"
+                onclick="filterWorks('certifications',this)">
+            Certifications
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Works Grid -->
+<section class="works-grid-section">
+  <div class="works-grid">
+
+   <!-- ==========================================
+     CYBERSECURITY PROJECTS
+=========================================== -->
+
+<!-- Microsoft Sentinel -->
+<a href="project-details/sentinel.html" class="project-link">
+
+    <div class="work-item" data-category="soc">
+
+        <img src="assets/projects/sentinel.jpg"
+             alt="Microsoft Sentinel"
+             loading="lazy">
+
+        <div class="work-overlay">
+            <div class="work-details">
+                <h3>Microsoft Sentinel</h3>
+                <p>Enterprise SIEM & Security Operations</p>
+            </div>
+        </div>
+
+    </div>
+
+</a>
+<!-- Azure security -->
+<a href="project-details/azure-security.html" class="project-link">
+
+<div class="work-item" data-category="cloud">
+
+    <img src="assets/projects/azure-security.jpg"
+         alt="Azure Security"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Microsoft Azure Security</h3>
+            <p>Cloud Security Administration</p>
+        </div>
+    </div>
+
+</div>
+
+</a>
+
+<!-- Vulnerability Management -->
+<a href="project-details/vulnerability.html" class="project-link">
+
+<div class="work-item" data-category="vulnerability">
+
+    <img src="assets/projects/vulnerability-management.jpg"
+         alt="Vulnerability Management"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Vulnerability Management</h3>
+            <p>Nessus • Qualys • Patch Validation</p>
+        </div>
+    </div>
+
+</div>
+
+</a>
+
+<!-- Microsoft Defender XDR -->
+<a href="project-details/defender.html" class="project-link">
+
+<div class="work-item" data-category="soc">
+
+    <img src="assets/projects/defender-xdr.jpg"
+         alt="Microsoft Defender XDR"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Microsoft Defender XDR</h3>
+            <p>Threat Detection & Response</p>
+        </div>
+    </div>
+
+</div>
+
+</a>
+
+<!-- Microsoft Intune -->
+<a href="project-details/intune.html" class="project-link">
+
+<div class="work-item" data-category="cloud">
+
+    <img src="assets/projects/intune.jpg"
+         alt="Microsoft Intune"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Microsoft Intune</h3>
+            <p>Endpoint & Device Management</p>
+        </div>
+    </div>
+
+</div>
+
+</a>
+
+<!-- Microsoft Entra ID -->
+<a href="project-details/entra.html" class="project-link">
+
+<div class="work-item" data-category="cloud">
+
+    <img src="assets/projects/entra.jpg"
+         alt="Microsoft Entra ID"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Microsoft Entra ID</h3>
+            <p>Identity & Access Management</p>
+        </div>
+    </div>
+
+</div>
+
+</a>
+<!-- Threat Hunting -->
+<a href="project-details/threat-hunting.html" class="project-link">
+
+<div class="work-item" data-category="soc">
+
+    <img src="assets/projects/threat-hunting.jpg"
+         alt="Threat Hunting"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Threat Hunting</h3>
+            <p>KQL Investigation & Log Analysis</p>
+        </div>
+    </div>
+
+</div>
+
+</a>
+<!-- Project 8 -->
+<div class="work-item" data-category="certifications">
+
+    <a href="assets/certificates/CEH-v13.pdf"
+       target="_blank"
+       rel="noopener noreferrer">
+
+        <img src="assets/certificates/ceh-v13.png"
+             alt="Certified Ethical Hacker v13"
+             loading="lazy">
+
+        <div class="work-overlay">
+            <div class="work-details">
+                <h3>Certified Ethical Hacker (CEH v13)</h3>
+                <p>EC-Council • Click to View Certificate</p>
+            </div>
+        </div>
+
+    </a>
+
+</div>
+
+<!-- Project 9 -->
+<div class="work-item" data-category="certifications">
+
+    <img src="assets/projects/azure-security.jpg"
+         alt="AZ-900 Certification"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+            <p>Exam Scheduled • July 2026</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Project 10 -->
+<div class="work-item" data-category="certifications">
+
+    <img src="assets/projects/sentinel.jpg"
+         alt="SC-900 Certification"
+         loading="lazy">
+
+    <div class="work-overlay">
+        <div class="work-details">
+            <h3>Microsoft SC-200</h3>
+            <p>Exam Scheduled • July 2026</p>
+        </div>
+    </div>
+
+</div>
+
+        <!-- Add unlimited more items here following the same pattern -->
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox hidden">
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">
+        <i data-lucide="x"></i>
+    </button>
+    <img id="lightbox-img" alt="Enlarged view">
+    <div class="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-description"></p>
+    </div>
+</div>
+
+<!-- Back To Top -->
+<button id="backToTop"class="back-to-top"onclick="scrollToTop()"aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+</button>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-grid">
+
+            <!-- About -->
+            <div class="footer-col">
+
+                <h4>About</h4>
+
+                <p>
+                    Security Analyst with hands-on experience in Security Operations (SOC),
+                    Microsoft Sentinel, Microsoft Defender XDR, Azure Security,
+                    Microsoft Entra ID, Microsoft Intune, Threat Hunting,
+                    Incident Response, and Vulnerability Management.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/aseshi.annapareddy"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Facebook">
+                        <i data-lucide="facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/annapareddyseshireddy/?hl=en"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram">
+                        <i data-lucide="instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@ANNAPAREDDYSESHIREDDY"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="YouTube">
+                        <i data-lucide="youtube"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/annapareddy-seshi-reddy-269b79266/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/SESHI052"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+
+                <h4>Quick Links</h4>
+
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Hands-on Experience</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Expertise -->
+            <div class="footer-col">
+
+                <h4>Expertise</h4>
+
+                <ul>
+                    <li><a href="contact.html">Security Operations (SOC)</a></li>
+                    <li><a href="contact.html">Cloud Security</a></li>
+                    <li><a href="contact.html">Threat Hunting</a></li>
+                    <li><a href="contact.html">Incident Response</a></li>
+                    <li><a href="contact.html">Vulnerability Management</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+
+                <h4>Contact</h4>
+
+                <ul class="contact-list">
+
+                    <li>
+                        <i data-lucide="phone"></i>
+                        <a href="tel:+918639296668">
+                            +91 8639296668
+                        </a>
+                    </li>
+
+                    <li>
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:annapareddyseshi052@gmail.com">
+                            annapareddyseshi052@gmail.com
+                        </a>
+                    </li>
+
+                    <li>
+                        <i data-lucide="map-pin"></i>
+                        <span>Guntur, Andhra Pradesh, India</span>
+                    </li>
+
+                </ul>
+
+                <div class="footer-map">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Guntur,Andhra+Pradesh,India&output=embed"
+                        loading="lazy"
+                        allowfullscreen=""
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Guntur, Andhra Pradesh">
+
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ANNAPAREDDY SESHI REDDY. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@0.473.0/dist/umd/lucide.min.js"></script>
+
+<!-- Main JavaScript -->
+<script src="script.js"></script>
+
+<!-- Initialize Icons -->
+<script>
+window.addEventListener('load', () => {
+
+    if (typeof lucide !== 'undefined') {
+
+        lucide.createIcons();
+
+        console.log("🛡️ ANNAPAREDDY SESHI REDDY Portfolio Loaded");
+
+    } else {
+
+        console.error("❌ Failed to load Lucide Icons");
+
+    }
+
+});
+</script>
+
+</body>
+</html>
